@@ -66,6 +66,6 @@ class Files:
   def removeDuplicates(self):
     duplicate_files = self.get_duplicates()
 
-    for i,f in enumerate(duplicate_files):
+    for f in duplicate_files:
       os.remove(f)
-    print('removed: {} files!'.format(i+1))
+    print('removed: {} files!'.format(len(duplicate_files)))
